@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>152995370368-cv4n31ra1atbcdrb5qmnl99jh3qgku5q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.152995370368-cv4n31ra1atbcdrb5qmnl99jh3qgku5q</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCIugrvVN0LAkaEQ5mS-ZVTMJeD_gnSNLk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>152995370368</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.example.expensor</string>
+	<key>PROJECT_ID</key>
+	<string>expensor-9c9c3</string>
+	<key>STORAGE_BUCKET</key>
+	<string>expensor-9c9c3.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:152995370368:ios:ecd88d441099ecb7001d65</string>
+	<key>DATABASE_URL</key>
+	<string>https://expensor-9c9c3.firebaseio.com</string>
+</dict>
+</plist>

@@ -18,6 +18,7 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* expensorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* expensorTests.m */; };
+		4A7D726723F9221600D58E25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A7D726623F9221600D58E25 /* GoogleService-Info.plist */; };
 		70C4DC5F6770BDF96698B3B2 /* libPods-expensorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C95095867E052733F392C /* libPods-expensorTests.a */; };
 		922E31EFC91EA584B85CEEE7 /* libPods-expensor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D247D81C86E22707770839 /* libPods-expensor.a */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		28D247D81C86E22707770839 /* libPods-expensor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-expensor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* expensor-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "expensor-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* expensor-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "expensor-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A7D726623F9221600D58E25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		64F9CB218205F0E0345BBF79 /* libPods-expensor-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-expensor-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3C95095867E052733F392C /* libPods-expensorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-expensorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA2E4B818D4102CD3148D1FC /* Pods-expensor-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expensor-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-expensor-tvOSTests/Pods-expensor-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,7 +150,6 @@
 				F7320536E14390166562AD3C /* Pods-expensorTests.debug.xcconfig */,
 				21F3BD7F3A90F0EDBC5B7AD3 /* Pods-expensorTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,6 +176,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				4A7D726623F9221600D58E25 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* expensor */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* expensorTests */,
@@ -230,6 +232,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				7ED5C3DCF5B613B45FCA48C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,6 +311,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -338,6 +342,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				4A7D726723F9221600D58E25 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +456,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ED5C3DCF5B613B45FCA48C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-expensor/Pods-expensor-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/gRPCCertificates-Cpp.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates-Cpp.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-expensor/Pods-expensor-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C7E397F0E4692ECCA4BBA6FD /* [CP] Check Pods Manifest.lock */ = {

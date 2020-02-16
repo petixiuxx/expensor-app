@@ -1,5 +1,7 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {View, SafeAreaView, FlatList, StyleSheet} from 'react-native';
+import firebase from 'react-native-firebase';
+
 import {ThemeContext} from '../../../theme';
 import {TopBar, Expense, Button} from '../../components';
 
@@ -24,6 +26,16 @@ const mock = [
 
 export default function ManageExpense({navigation}) {
   const theme = useContext(ThemeContext);
+  const ref = firebase.firestore().collection('users');
+
+  useEffect(() => {
+    async function testDB() {
+      await ref.add({
+        name: 'harry',
+      });
+    }
+    // testDB();
+  }, [ref]);
   return (
     <View style={[styles.container, {backgroundColor: theme.backgroundColor}]}>
       <TopBar
@@ -52,7 +64,7 @@ export default function ManageExpense({navigation}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingVertical: 64,
+    paddingVertical: 42,
     paddingHorizontal: 24,
     justifyContent: 'space-between',
   },

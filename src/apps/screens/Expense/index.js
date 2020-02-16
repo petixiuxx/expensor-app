@@ -42,7 +42,7 @@ export default function ExpenseScreen({navigation}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingVertical: 64,
+    paddingVertical: 32,
     paddingHorizontal: 24,
   },
   form: {

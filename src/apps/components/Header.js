@@ -8,7 +8,7 @@ export default function Header() {
   const theme = useContext(ThemeContext);
 
   return (
-    <View style={{marginVertical: 28}}>
+    <View style={{marginVertical: 20}}>
       <TouchableOpacity onPress={() => navigation.goBack()}>
         <Text style={{color: theme.blue, fontWeight: 'bold'}}>Back</Text>
       </TouchableOpacity>

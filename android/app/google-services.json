@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "152995370368",
+    "firebase_url": "https://expensor-9c9c3.firebaseio.com",
+    "project_id": "expensor-9c9c3",
+    "storage_bucket": "expensor-9c9c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152995370368:android:46422b5ca92fb1d3001d65",
+        "android_client_info": {
+          "package_name": "com.expensor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152995370368-65351lfuctedg1m2eu2p8mo7r0i1im76.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALSAW_JeHLrierhHsq2xhYJFWjwzGBWWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152995370368-65351lfuctedg1m2eu2p8mo7r0i1im76.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "152995370368-cv4n31ra1atbcdrb5qmnl99jh3qgku5q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.expensor"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
